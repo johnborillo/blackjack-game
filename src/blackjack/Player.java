@@ -8,8 +8,9 @@ package blackjack;
 /**
  * A class that models each Player in the game. Players have an identifier, which should be unique.
  *
- * @author dancye
- * @author Paul Bonenfant Jan 2020
+ * @author John Borillo
+ * @author Arielle Kaye Rapi
+ * @author Umut Dogan
  */
 public abstract class Player {
 

@@ -9,11 +9,48 @@ package blackjack;
  * A class to be used as the base Card class for the project. Must be general enough to be instantiated for any Card
  * game. Students wishing to add to the code should remember to add themselves as a modifier.
  *
- * @author dancye
+ * @author John Borillo
+ * @author Arielle Kaye Rapi
+ * @author Umut Dogan
  */
 public abstract class Card {
     //default modifier for child classes
+    public enum Suit {SPADES, CLUBS, HEARTS, DIAMONDS};
+    public enum Value {ACE,TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE,TEN,JACK,QUEEN,KING};
+    private Suit s; // enum user defined datatype 
+    private Value v;
+    
+    public Card(Suit s,Value v){
+        this.s=s;
+        this.v=v;
+    }
+    /**
+     * @return the s
+     */
+    public Suit getS() {
+        return s;
+    }
 
+    /**
+     * @param s the s to set
+     */
+    public void setS(Suit s) {
+        this.s = s;
+    }
+
+    /**
+     * @return the v
+     */
+    public Value getV() {
+        return v;
+    }
+
+    /**
+     * @param v the v to set
+     */
+    public void setV(Value v) {
+        this.v = v;
+    }
     /**
      * Students should implement this method for their specific children classes
      *
